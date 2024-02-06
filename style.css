@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+
+}
+body{
+    min-height:100vh;
+    font-family: 'Karla', sans-serif;
+    font-size:16px; 
+    display:grid;
+    place-content: center;
+    background-color:var(--LightGray);
+}
+.container{
+    width:50rem;
+    height:32rem;
+    overflow:hidden;
+    border-radius:.6rem;
+    background-color:white;
+
+}
+ .join{
+    display:grid;
+    gap:2rem;
+    width:100%;
+    height:14rem;
+    background-color:white;
+    padding:3rem;
+    gap:2rem;
+}
+.join .heading{
+    color:var(--Cyan);
+    font-size:1.5em;
+
+}
+.join .subheading{
+    color:var(--BrightYellow);
+}
+.join p{
+    margin-top:-1rem;
+    color:var(--GrayishBlue);
+    line-height:1.5rem;
+}
+.center{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  height:18rem;
+}
+.center .left{
+    display:grid;
+    gap:1rem;
+    width:25rem;
+    height:100%;
+    padding:3rem;
+    background-color: var(--Cyan);
+}
+.center .left h3 {
+    color:white;
+    font-weight:bold;
+}
+.center .left .plan{
+    display:flex;
+    gap:1rem;
+    
+}
+.center .left .plan h3{
+    font-size:1.7em;
+}
+.center .left .plan p{
+    color:var(--LightGray);
+    font-size:.9em;
+    font-weight:lighter;
+    margin-top:.4rem;
+}
+.center .left p{
+     color:var(--LightGray);
+}
+.center .left input{
+    background-color: var(--BrightYellow);
+    outline:none;
+    border:none;
+    padding:1rem;
+    border-radius:.5rem;
+    color:white;
+    font-weight:bold;
+    margin-top:1rem;
+    box-shadow:0 0 .6rem  rgba(0,0,0,0.3);
+}
+.center .right{
+    display:grid;
+    width:25rem;
+    height:100%;
+    background-color: hsl(179, 62%, 43%,.7);
+   padding:3rem;
+   gap:1rem;
+}
+.center .right h3{
+    color:white;
+    font-weight:bold;
+}
+.center .right p{
+    color:var(--LightGray);
+    width:12rem;
+    font-size:1em;
+    line-height:1.2rem;
+}
+
+@media (max-width:800px)
+{
+    .container{
+        width:25rem;
+        height:50rem;
+    }
+    .join{
+        height:17rem;
+    }
+    .center{
+        display:grid;
+        height:23rem;
+    }
+
+}
+
+
+
